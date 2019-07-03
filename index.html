@@ -13,12 +13,31 @@
             var questions = [ 
                 {"q": "Guess the word the we need to unlock the safe!", "a": "fantastic"},
                 ]
+
+                function askQuestion() {
+                    document.getElementById("question").innerHTML = questions[questionIndex].q;
+                }
+                function showScore() {
+                    document.getElementById("score").innerHTML = score;
+                }
+            
+            askQuestion();
+            showScore();
+
             var score = 0;
+            var questionIndex = 0;
 
             document.onkeyup = function (event) {
                 var userInput = event.key.toLowerCase();
-                if (userInput === question[questionIndex].a)
+                if (userInput === question[questionIndex].a){
+                    alert("You have unlocked the safe! Congradulations!")
+                    score++;
 
+                }
+                    showScore();
+                    questionIndex++;
+                    askQuestion();
+                    
             }
         </script>
 
