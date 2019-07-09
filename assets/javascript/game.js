@@ -3,6 +3,7 @@ var words = [
     "meow",
     "purr",
     "kitty",
+    // not sure why the console won't let it finish the word before announcing that the word was solved.
 ]
 
 var word = words[Math.floor(Math.random() * words.length)];
