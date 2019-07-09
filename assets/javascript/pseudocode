@@ -1,0 +1,21 @@
+
+PICK a random word.
+WHILE the word has not been guessed {
+    SHOW the player the current progress.
+    GET a guess from the player
+
+}
+
+IF the player wants to quit the game {
+    QUIT the game
+}
+ELSE IF the guess is not a single letter {
+    TELL the player
+}
+ELSE { 
+    IF the guess is in the word {
+        UPDATE the player of progress with the guess
+    }
+}
+}
+CONGRADULATE the player on guessing the word
