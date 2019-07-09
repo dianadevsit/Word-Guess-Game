@@ -1,47 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us>">
     <head>
-        <meta charset="UTF-8">
-        <title> WORD GUESSING GAME </title>
-        <link rel="css/stylesheet" href="assets/css/style.css">
-
-        <p id="score"></p>
-        <p id="question"></p>
+        <title>Word Guessing Game</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">.
     </head>
+
     <body>
-        <h1 img src="locksafe.jpeg"></h1>
-        <script>
-            alert("There is a secret in the safe, your job is to guess the secret word and unlock the safe! I wonder what the secret word could be!")
-            var questions = [ 
-                {"q": "Guess the word the we need to unlock the safe!", "a": "fantastic"},
-                ]
+        <h1>Guess the word to the safe!</h1>
+        <div class="lockSafe"></div>
 
-                function askQuestion() {
-                    document.getElementById("question").innerHTML = questions[questionIndex].q;
-                }
-                function showScore() {
-                    document.getElementById("score").innerHTML = score;
-                }
-            
-            askQuestion();
-            showScore();
+        <script src="assets/javascript/game.js"></script>
 
-            var score = 0;
-            var questionIndex = 0;
-
-            document.onkeyup = function (event) {
-                var userInput = event.key.toLowerCase();
-                if (userInput === question[questionIndex].a){
-                    alert("You have unlocked the safe! Congradulations!")
-                    score++;
-
-                }
-                    showScore();
-                    questionIndex++;
-                    askQuestion();
-                    
-            }
-        </script>
 
     </body>
+
 </html>
